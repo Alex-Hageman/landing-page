@@ -1,9 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Hageman — Business Analytics &amp; Information Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
 </head>
 <body>
-    <h1>Hello World</h1>
+
+  <header>
+    <nav class="nav-container" aria-label="Primary navigation">
+      <span class="nav-brand">Alex Hageman</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" aria-labelledby="hero-name">
+      <div class="hero-inner">
+        <img
+          src="images/headshot.jpeg"
+          alt="Professional headshot of Alex Hageman"
+          class="headshot"
+          width="160"
+          height="160"
+        />
+        <h1 id="hero-name">Alex Hageman</h1>
+        <p class="tagline">Business Analytics Student &amp; Data Optimizer</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+          I am a junior at the University of Iowa pursuing a B.B.A. in Business Analytics
+          &amp; Information Systems. My focus is on data efficiency, optimization, and digital
+          product management — translating raw data into decisions that drive measurable
+          business value. I am actively seeking Data Analyst and Business Intelligence roles
+          at large-scale technology companies, with an expected graduation in May 2027.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-inner">
+        <h2 id="skills-heading">Skills</h2>
+
+        <div class="skills-group">
+          <h3>Tools</h3>
+          <ul class="tag-list" aria-label="Technical tools">
+            <li class="tag tag--accent">SQL</li>
+            <li class="tag tag--accent">Tableau</li>
+            <li class="tag tag--accent">Python</li>
+            <li class="tag tag--accent">Microsoft Excel</li>
+            <li class="tag tag--accent">Excel Copilot</li>
+            <li class="tag tag--accent">Azure DevOps</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Techniques</h3>
+          <ul class="tag-list" aria-label="Analytical techniques">
+            <li class="tag tag--secondary">Regression Analysis</li>
+            <li class="tag tag--secondary">Forecasting</li>
+            <li class="tag tag--secondary">Financial Reporting</li>
+            <li class="tag tag--secondary">Data Visualizations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card" aria-labelledby="project-1-title">
+            <div class="project-card-body">
+              <h3 id="project-1-title">VGM Group — SQL Query Optimization</h3>
+              <p class="project-type">Data Engineering &amp; Performance</p>
+              <p>
+                Reviewed and refactored 500+ SQL queries at VGM Group to enhance data
+                retrieval efficiency and meaningfully reduce processing time across
+                enterprise reporting pipelines.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>SQL</li>
+                <li>Azure DevOps</li>
+                <li>Database Optimization</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-2-title">
+            <div class="project-card-body">
+              <h3 id="project-2-title">Self-Serve Customer Dashboard</h3>
+              <p class="project-type">Business Intelligence &amp; UX</p>
+              <p>
+                Standardized design systems and built a customer-facing self-serve dashboard
+                at VGM Group, improving usability and increasing customer adoption of
+                data-driven reporting tools.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>Tableau</li>
+                <li>Design Systems</li>
+                <li>Data Visualization</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="project-3-title">
+            <div class="project-card-body">
+              <h3 id="project-3-title">Hageman Homes — 3D Modeling</h3>
+              <p class="project-type">Spatial Data &amp; Visualization</p>
+              <p>
+                Used LiDAR scanners and DJI software to convert 2D architectural floor
+                plans into accurate 3D models, enabling clearer spatial communication
+                for residential projects.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>LiDAR</li>
+                <li>DJI Software</li>
+                <li>3D Modeling</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p class="contact-intro">
+        I am open to full-time and internship opportunities in data analytics and
+        business intelligence. Reach out on any of the platforms below.
+      </p>
+      <ul class="contact-links" aria-label="Contact and social links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/alex-hageman"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Alex Hageman on LinkedIn"
+          >
+            <span class="contact-icon" aria-hidden="true">in</span>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/athageman"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Alex Hageman on GitHub"
+          >
+            <span class="contact-icon" aria-hidden="true">GH</span>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:alexhageman4@gmail.com"
+            aria-label="Send an email to Alex Hageman"
+          >
+            <span class="contact-icon" aria-hidden="true">@</span>
+            alexhageman4@gmail.com
+          </a>
+        </li>
+      </ul>
+      <p class="footer-copy">
+        &copy; 2025 Alex Hageman &middot; University of Iowa &middot; BAIS:3300
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
